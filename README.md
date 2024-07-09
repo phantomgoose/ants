@@ -14,7 +14,7 @@ Left click to spawn food (orange cells), right click to spawn impassable terrain
 
 ## Home base
 
-Ants have a home base (brown cells at the center of the screen) from which they begin foraging at the start of the
+Ants have a home base (purple cells at the center of the screen) from which they begin foraging at the start of the
 simulation.
 
 Ants drop off food here and refill home base pheromones when stepping on these cells.

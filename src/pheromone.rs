@@ -1,15 +1,13 @@
 use std::collections::{HashMap, HashSet};
 
-use macroquad::color::PURPLE;
 use macroquad::math::Rect;
 use macroquad::prelude::Color;
 use rayon::prelude::*;
 
 use crate::ant::ANT_RANDOM_WALK_MAX_ROTATION;
-use crate::grid::{GridLocation, WorldGrid};
+use crate::grid::{GridLocation, NEST_COLOR, WorldGrid};
 use crate::util::{normalize_angle, RectExtensions};
 
-pub const PHEROMONE_SEARCH_COLOR: Color = PURPLE;
 const MAX_FOOD_PHEROMONE_OPACITY: f32 = 0.75;
 const MAX_HOME_PHEROMONE_OPACITY: f32 = 0.75;
 const PHEROMONE_FOOD_COLOR: Color = Color::new(1.00, 0.65, 0.50, MAX_FOOD_PHEROMONE_OPACITY);
@@ -72,7 +70,7 @@ impl Pheromone {
                     .intensity
                     .min(MAX_HOME_PHEROMONE_OPACITY)
                     .min(MAX_HOME_PHEROMONE_OPACITY),
-                ..PHEROMONE_SEARCH_COLOR
+                ..NEST_COLOR
             },
         };
 

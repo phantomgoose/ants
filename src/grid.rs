@@ -1,6 +1,6 @@
 use std::collections::HashSet;
 
-use macroquad::color::{BROWN, Color, WHITE, YELLOW};
+use macroquad::color::{Color, PURPLE, WHITE, YELLOW};
 use macroquad::prelude::{get_fps, Rect, Vec2};
 use macroquad::text::draw_text;
 
@@ -14,7 +14,7 @@ pub const GRID_HEIGHT: usize = 150;
 
 // colors
 pub const FOOD_COLOR: Color = Color::new(1.00, 0.3, 0.00, 1.00);
-const NEST_COLOR: Color = BROWN;
+pub const NEST_COLOR: Color = PURPLE;
 const TERRAIN_COLOR: Color = YELLOW;
 
 // food
